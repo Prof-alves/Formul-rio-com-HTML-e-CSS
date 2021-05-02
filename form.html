@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilo form.css">
+    <title>CADASTRO</title>
+</head>
+<body>
+    
+    <div>
+        <h1>CADASTRO DE DEVS</h1>
+        <p>Estudando desenvolvimento web (Vídeo "FORMULÁRIOS COM HTML e CSS!", do canal Rafaella Ballerini no YouTube)</p>
+        <P><strong> Complete os campos para concluir o cadastro.</strong></P>
+    </div>
+        <form>
+        <fieldset>
+            <div>
+                <label><strong> Nome</strong></label>
+                <input type="text" name="Nome" id="Nome" required>
+            </div>
+        <br>
+            <div>
+                <label><strong> Sobrenome</strong></label>
+                <input type="text" name="Sobrenome" id="Sobrenome" required>
+            </div>
+        </fieldset>
+        <br>
+        <div>
+            <label><strong> E-mail </strong></label>
+            <input type="email" name="E-mail" id="E-mail" required>
+        </div>
+        <div> <br>
+            <label><strong> Qual é seu curso de graduação?</strong></label>
+
+            <label>
+                <input type="radio" name="graduação" value="bcc" > Ciência da Computação
+            </label>
+
+            <label>
+                <input type="radio" name="graduação" value="ads"> Análise e Desenvolvimento de Sistemas
+            </label>
+
+            <label>
+                <input type="radio" name="graduação" value="BSI"> Sistema de Informação
+            </label>
+
+            <label>
+                <input type="radio" name="graduação" value="outro"> Outro
+            </label>
+        </div>
+        <div> <br>
+            <label><strong> Onde atua ou quer atuar no desenvolvimento web?</strong></label>
+
+            <label>
+                <input type="radio" name="devweb" value="Front"> Front end
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="Back"> Back end
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="Full"> Full Stack
+            </label>
+        </div>
+        <div> <br>
+            <label><strong> Senioridade/ Experiência</strong></label>
+            <select name="senioridade" id="senioridade" required>
+                <option selected disabled value="">Selecione</option>
+                <option>Trainee</option>
+                <option>Junior</option>
+                <option>Pleno</option>
+                <option>Senior</option>
+            </select>
+        </div> <br>
+        <fieldset>
+            <div> <br>
+                <label><strong> Suas competências, habilidades e conhecimentos</strong></label>
+                <input type="checkbox" id="1" name="1" value="HTML"> HTML 
+                <input type="checkbox" id="2" name="2" value="CSS"> CSS
+                <input type="checkbox" id="3" name="3" value="JS"> JavaScript
+                <input type="checkbox" id="4" name="4" value="py"> Python
+                <input type="checkbox" id="5" name="5" value="Java"> Java 
+                <input type="checkbox" id="6" name="6" value="PHP"> PHP
+                <input type="checkbox" id="7" name="7" value="C++"> C++
+                <input type="checkbox" id="8" name="8" value="C#"> C#
+            </div>
+        </fieldset>
+        <div> <br>
+            <label><strong> Faça um breve resumo sobre seus estudos e experiência de mercado</strong></label> <br>
+            <textarea name="Resumo" id="Resumo" cols="15" rows="3" style="width:26em"></textarea>
+        </div>
+        <br>
+        <button type="submit">Enviar formulário</button>
+       </form> <br><br><br>
+       <label><strong> Formulário desenvolvido por Matheus S. A. Pereira para fins didáticos </strong></label>
+</body>
+</html>
+
